@@ -24,6 +24,7 @@ function getComputerChoice() {
   let empates = 0;
   let userPoints = 0;
   let machinePoints = 0;
+  let counter = 0;
 
 for (i = 0; i < 5; i++) {
     let user = prompt("Pedra, Papel, ou Tesoura?", )
@@ -76,6 +77,13 @@ for (i = 0; i < 5; i++) {
     }
 
     console.log("Maquina (" + machinePoints + ")" + " X Você (" + userPoints + ")");
+
+    alert(result);
+
+    counter++
+    if (counter === 5) {
+        alert("Maquina (" + machinePoints + ")" + " X Você (" + userPoints + ")");
+    }
 }
 
 
