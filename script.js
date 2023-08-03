@@ -82,7 +82,17 @@ for (i = 0; i < 5; i++) {
 
     counter++
     if (counter === 5) {
-        alert("Maquina (" + machinePoints + ")" + " X Você (" + userPoints + ")");
+        if (userPoints > machinePoints) {
+            alert("Você Venceu!!!");
+            alert("Maquina (" + machinePoints + ")" + " X Você (" + userPoints + ")");
+        }
+        else if (userPoints < machinePoints) {
+            alert("Você Perdeu!!! 😭😭😭");
+            alert("Maquina (" + machinePoints + ")" + " X Você (" + userPoints + ")");
+        }
+        else {
+            alert("Deu Empate...");
+        }
     }
 }
 
@@ -92,34 +102,3 @@ for (i = 0; i < 5; i++) {
 
 
 
-
-
-// function game() {
-//     if (user.toLowerCase() == "pedra" && computerChoice == "Pedra") {
-//         console.log("Empatou!");
-//     }
-//     if (user.toLowerCase() == "papel" && computerChoice === "Pedra") {
-//         console.log("Você Venceu!");
-//     }
-//     if (user.toLowerCase() == "tesoura" && computerChoice === "Pedra") {
-//         console.log("Você Perdeu!");
-//     }
-//     if (user.toLowerCase() == "pedra" && computerChoice === "Papel") {
-//         console.log("Você Perdeu!");
-//     }
-//     if (user.toLowerCase() == "papel" && computerChoice === "Papel") {
-//         console.log("Empatou!");
-//     }
-//     if (user.toLowerCase() == "tesoura" && computerChoice === "Papel") {
-//         console.log("Você Venceu!");
-//     }
-//     if (user.toLowerCase() == "pedra" && computerChoice === "Tesoura") {
-//         console.log("Você Perdeu!");
-//     }
-//     if (user.toLowerCase() == "papel" && computerChoice === "Tesoura") {
-//         console.log("Você Venceu!");
-//     }
-//     if (user.toLowerCase() == "tesoura" && computerChoice === "Tesoura") {
-//         console.log("Empatou!");
-//     }
-// }
