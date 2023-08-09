@@ -1,0 +1,65 @@
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: 'Work Sans', sans-serif;
+    font-size: 1.125rem;
+    background-color: rgb(30, 23, 46);
+}
+
+header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: aliceblue;
+}
+
+
+.score-board {
+    display: flex;
+    justify-content: center;
+    border: 3px solid aliceblue;
+    margin: 25px auto 0;
+    padding: 20px;
+    color: aliceblue;
+    width: 100px;
+    font-weight: bold;
+    font-size: 1.75rem;
+}
+
+.result {
+    display: flex;
+    justify-content: center;
+    color: aliceblue;
+}
+
+.result > p {
+    font-weight: bold;
+    font-size: 1.75rem;
+}
+
+.choices {
+    display: flex;
+    justify-content: center;
+    
+}
+
+.choice {
+    margin: 0 10px;
+    background: none;
+    outline: none;
+    border: none;
+    color: aliceblue;
+    cursor: pointer;
+    font-size: 8rem;
+    transition: all 110ms ease-out;
+}
+
+.choice:hover {
+    transform: scale(1.2);
+    color: rgb(2, 190, 2);
+}
