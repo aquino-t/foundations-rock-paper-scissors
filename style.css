@@ -35,11 +35,22 @@ header {
     display: flex;
     justify-content: center;
     color: aliceblue;
+    align-items: center;
 }
 
 .result > p {
+    
     font-weight: bold;
     font-size: 1.75rem;
+}
+
+.winner {
+    display: none;
+    justify-content: center;
+    color: aliceblue;
+    font-weight: bold;
+    font-size: 3rem;
+    margin-bottom: 50px;
 }
 
 .choices {
